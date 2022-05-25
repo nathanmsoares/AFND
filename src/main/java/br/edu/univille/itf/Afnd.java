@@ -64,6 +64,7 @@ public class Afnd {
 
     public void execute(){
         setup();
+        logger.info("Executing AFND");
         for (JsonNode sequenceList: sequences.get("sequences")) {
             for (JsonNode input: sequenceList) {
                 List<String> tempList = new ArrayList<>();
